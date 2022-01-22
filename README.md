@@ -7,4 +7,4 @@ for more informations about the project instructions : https://github.com/yoann-
 ## Compilation
 
 
-## Executing
+## Usage
