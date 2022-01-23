@@ -13,9 +13,9 @@ For more informations about the project instructions : https://github.com/yoann-
 ## Usage
 Five parameters are required :
 - path : path that leads to the FASTA file
-- k : size of kmers
-- n : size of the filter
-- nf : number of hashing function
+- k : size of kmers (max 31)
+- n : size of the filter (max 2^34 (16 Go))
+- nf : number of hashing function (max 64)
 - r : number of requests
 
 To run, use this command :
