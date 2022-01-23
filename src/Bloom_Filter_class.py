@@ -42,7 +42,7 @@ class BloomFiltrer:
     #        k -> size of kmers
     def add_value(self, x, k):
         for ind,bit in multihash(self, x, k):
-            self.array[ind]=1<<bit
+            self.array[ind]|=1<<bit
     
     # Verify if a value is in the filter
     # input: x -> value to add
