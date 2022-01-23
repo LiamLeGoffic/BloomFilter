@@ -17,5 +17,5 @@ Five parameters are required :
 
 To run, use this command :
 ```
-./BloomFilter.py -path -k -n -nf -r
+python BloomFilter.py -path -k -n -nf -r
 ```
