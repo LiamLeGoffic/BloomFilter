@@ -1,6 +1,6 @@
 from src.Bloom_Filter_class import *
 from src.Hashing_sequence import *
-import sys, os
+import sys
 
 
 if len(sys.argv)!=6:
