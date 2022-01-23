@@ -36,6 +36,6 @@ for nt in seq:
 # Test the random requests
 cpt = 0
 for i in range(r):
-    if bf.is_present(random.randrange(4**k/2, 4**k), k):
+    if bf.is_present(random.randrange(4**k), k):
         cpt+=1
 print(cpt)
