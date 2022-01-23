@@ -28,7 +28,7 @@ seq = iter(read_fasta(fasta))
 code, reverse_code = hashing(''.join([next(seq) for i in range(k)]))
 bf.add_value(min(code, reverse_code), k)
 
-# Iteration of Bloom Filter construction
+# Iterations of Bloom Filter construction
 for nt in seq:
     code, reverse_code = next_kmer(code, reverse_code, nt, k)
     bf.add_value(min(code, reverse_code), k)
@@ -36,6 +36,6 @@ for nt in seq:
 # Test the random requests
 cpt = 0
 for i in range(r):
-    if bf.is_present(random.randrange(2**(2*k-1)), k):
+    if bf.is_present(random.randrange(4**k/2, 4**k), k):
         cpt+=1
 print(cpt)
